@@ -1,0 +1,121 @@
+body {
+    background-color: #758af4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+        flex-direction: row;
+        
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Filtros */
+#filters {
+    margin-top: 30px;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 200px;
+}
+
+/* Resultados de la búsqueda */
+#results {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+/* Carrito de compras */
+#cart {
+    width: 200%;
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+   
+}
+
+
+#cartList {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Tarjetas de producto */
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Botones */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#shoppingCart {
+    width: 30%; /* Ancho del carrito */
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: fixed; /* Posición fija para que se mantenga en la misma ubicación al hacer scroll */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde el borde derecho */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
